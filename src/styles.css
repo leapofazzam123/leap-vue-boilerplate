@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-4
+           lg:mx-28
+           bg-white
+           text-base
+           text-black
+           antialiased
+           leading-relaxed
+           dark:bg-gray-900
+           dark:text-white;
+  }
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  h4 {
+    @apply text-lg;
+  }
+  h5 {
+    @apply text-base;
+  }
+  h6 {
+    @apply text-sm;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold;
+  }
+  blockquote,
+  dl,
+  dd,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  hr,
+  figure,
+  p,
+  pre {
+    @apply mb-2;
+  }
+  ol,
+  ul {
+    @apply list-outside;
+  }
+  ol {
+    @apply list-decimal;
+  }
+  ul {
+    @apply list-disc;
+  }
+}
+@layer components {
+  a {
+    @apply text-blue-500
+           transition
+           duration-300;
+  }
+  a:hover {
+    @apply underline
+           transition
+           duration-300;
+  }
+  code {
+    @apply px-2
+           py-1
+           rounded-md
+           bg-gray-100
+           text-black
+           text-sm
+           dark:bg-gray-700
+           dark:text-white;
+  }
+  button {
+    @apply px-4
+           py-2
+           bg-blue-500
+           font-medium
+           text-white
+           rounded-lg
+           shadow-sm
+           transition
+           duration-300;
+  }
+  button:focus {
+    @apply ring-2
+           transition
+           duration-300;
+  }
+}
