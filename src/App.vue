@@ -7,8 +7,16 @@ import HelloWorld from "./components/HelloWorld.vue"
 <template>
   <div class="flex flex-col h-screen">
     <div class="m-auto text-center">
-      <img class="h-32 mx-auto" alt="Vue logo" src="./assets/logo.png" />
+      <img class="h-1/4 mx-auto" alt="Vue logo" src="./assets/logo.png" />
       <HelloWorld msg="Hello World!" />
+      <!--<pre><code>test
+test
+test
+    test
+    test
+    test
+    gshsbsuwhsguehsgdfyjdtftxfjdjdjdjhtdudseysyeusysshrhrszhdshzehzhshsgjszhezdhztshhshsthddhsrhzeheshszr
+</code></pre>-->
     </div>
   </div>
 </template>

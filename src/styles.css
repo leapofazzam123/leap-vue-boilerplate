@@ -1,11 +1,9 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @layer base {
   body {
-    @apply m-4
-           lg:mx-28
+    @apply container
+           px-4
+           lg:px-28
            bg-white
            text-base
            text-black
@@ -53,7 +51,8 @@
   figure,
   p,
   pre {
-    @apply mb-2;
+    @apply block
+           mb-2;
   }
   ol,
   ul {
@@ -66,6 +65,8 @@
     @apply list-disc;
   }
 }
+
+@tailwind components;
 @layer components {
   a {
     @apply text-blue-500
@@ -87,12 +88,31 @@
            dark:bg-gray-700
            dark:text-white;
   }
+  pre {
+    @apply py-3
+           px-4
+           rounded-md
+           bg-gray-100
+           text-black
+           text-sm
+           text-left
+           overflow-x-auto
+           whitespace-pre-line
+           dark:bg-gray-700
+           dark:text-white;
+  }
+  pre code {
+    @apply p-0
+           w-full
+           whitespace-pre;
+  }
   button {
     @apply px-4
            py-2
            bg-blue-500
            font-medium
            text-white
+           text-center
            rounded-lg
            shadow-sm
            transition
@@ -104,3 +124,5 @@
            duration-300;
   }
 }
+
+@tailwind utilities;
